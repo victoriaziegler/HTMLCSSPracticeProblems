@@ -1,0 +1,236 @@
+- model: problems.person
+  pk: 1
+  fields:
+    name: Anima
+    age: 29
+    pronouns: she/her
+- model: problems.person
+  pk: 2
+  fields:
+    name: Asa
+    age: 31
+    pronouns: they/them
+- model: problems.person
+  pk: 3
+  fields:
+    name: Asha
+    age: 21
+    pronouns: he/him
+- model: problems.person
+  pk: 4
+  fields:
+    name: Azami
+    age: 33
+    pronouns: they/them
+- model: problems.person
+  pk: 5
+  fields:
+    name: Basia
+    age: 35
+    pronouns: he/him
+- model: problems.person
+  pk: 6
+  fields:
+    name: Baz
+    age: 19
+    pronouns: she/her
+- model: problems.person
+  pk: 7
+  fields:
+    name: Caris
+    age: 18
+    pronouns: she/her
+- model: problems.person
+  pk: 8
+  fields:
+    name: Duska
+    age: 20
+    pronouns: he/him
+- model: problems.person
+  pk: 9
+  fields:
+    name: Evander
+    age: 35
+    pronouns: they/them
+- model: problems.person
+  pk: 10
+  fields:
+    name: Haris
+    age: 30
+    pronouns: ze/zir
+- model: problems.person
+  pk: 11
+  fields:
+    name: Idris
+    age: 30
+    pronouns: he/him
+- model: problems.person
+  pk: 12
+  fields:
+    name: Kala
+    age: 29
+    pronouns: Kala
+- model: problems.person
+  pk: 13
+  fields:
+    name: Kamal
+    age: 39
+    pronouns: she/her
+- model: problems.person
+  pk: 14
+  fields:
+    name: Ken
+    age: 29
+    pronouns: he/him
+- model: problems.person
+  pk: 15
+  fields:
+    name: Kim
+    age: 38
+    pronouns: she/her
+- model: problems.person
+  pk: 16
+  fields:
+    name: Laila
+    age: 17
+    pronouns: she/her
+- model: problems.person
+  pk: 17
+  fields:
+    name: Lina
+    age: 22
+    pronouns: she/her
+- model: problems.person
+  pk: 18
+  fields:
+    name: Lulu
+    age: 23
+    pronouns: they/them
+- model: problems.person
+  pk: 19
+  fields:
+    name: Malik
+    age: 28
+    pronouns: he/him
+- model: problems.person
+  pk: 20
+  fields:
+    name: Nia
+    age: 19
+    pronouns: they/them
+- model: problems.person
+  pk: 21
+  fields:
+    name: Noor
+    age: 21
+    pronouns: she/her
+- model: problems.person
+  pk: 22
+  fields:
+    name: Paz
+    age: 22
+    pronouns: she/her
+- model: problems.person
+  pk: 23
+  fields:
+    name: Raisa
+    age: 19
+    pronouns: she/her
+- model: problems.person
+  pk: 24
+  fields:
+    name: Samir
+    age: 30
+    pronouns: he/him
+- model: problems.person
+  pk: 25
+  fields:
+    name: Talia
+    age: 33
+    pronouns: ze/zir
+- model: problems.person
+  pk: 26
+  fields:
+    name: Zahara
+    age: 34
+    pronouns: Zahara
+- model: problems.pet
+  pk: 1
+  fields:
+    name: Spot
+    owner: 2
+- model: problems.pet
+  pk: 2
+  fields:
+    name: Mr. Whiskers
+    owner: 3
+- model: problems.pet
+  pk: 3
+  fields:
+    name: Fido
+    owner: 3
+- model: problems.pet
+  pk: 4
+  fields:
+    name: Sir Red Barrington
+    owner: 6
+- model: problems.pet
+  pk: 5
+  fields:
+    name: Spot
+    owner: 7
+- model: problems.pet
+  pk: 6
+  fields:
+    name: Charlie
+    owner: 11
+- model: problems.pet
+  pk: 7
+  fields:
+    name: Homer
+    owner: 11
+- model: problems.pet
+  pk: 8
+  fields:
+    name: Mr. Steeds
+    owner: 11
+- model: problems.pet
+  pk: 9
+  fields:
+    name: Mrs. Worthingham
+    owner: 12
+- model: problems.pet
+  pk: 10
+  fields:
+    name: Opie
+    owner: 13
+- model: problems.pet
+  pk: 11
+  fields:
+    name: Dog
+    owner: 20
+- model: problems.pet
+  pk: 12
+  fields:
+    name: Cat
+    owner: 20
+- model: problems.pet
+  pk: 13
+  fields:
+    name: Ironic Hamster
+    owner: 20
+- model: auth.user
+  pk: 1
+  fields:
+    password: pbkdf2_sha256$320000$Ys1FV55197Pi0UIHqmfWto$b1njMu+XTSMzCC+elgN7qxA8agDK2mGmVDdztti3jG8=
+    last_login: 2022-06-09 20:58:21.895584+00:00
+    is_superuser: true
+    username: admin
+    first_name: ''
+    last_name: ''
+    email: ''
+    is_staff: true
+    is_active: true
+    date_joined: 2022-06-09 20:58:17.742617+00:00
+    groups: []
+    user_permissions: []

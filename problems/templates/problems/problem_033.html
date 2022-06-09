@@ -1,0 +1,31 @@
+<!--
+For this file, please open the associated problem_033.css
+file.
+
+This file contains a list of people in divs as children
+of the div with the "name-grid" class.
+-->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/problem_033.css' %}">
+  <title>Problem 33</title>
+</head>
+<body>
+  <main>
+    <div class="name-grid">
+      {% for person in people %}
+        <div>
+          <div class="name-grid-name">{{ person.name }}</div>
+          <div class="name-grid-pronouns">{{ person.pronouns }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  </main>
+</body>
+</html>

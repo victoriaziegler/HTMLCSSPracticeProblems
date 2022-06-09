@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Problem 023</title>
+</head>
+<body>
+  <main>
+    <!--
+      In this one, we're constructing a table. Pay
+      attention to all of it because pieces will
+      disappear over the next couple of problems.
+
+      In this one, you're going to add the for loop
+      to build the rows of data for the table.
+
+      This context has a list of Person objects stored
+      in the "people" key.
+    -->
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Pronouns</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- for each person in people -->
+
+          <tr>
+            <td>{{ person.name }}</td>
+            <td>{{ person.age }}</td>
+            <td>{{ person.pronouns }}</td>
+          </tr>
+        <!-- end for -->
+
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>

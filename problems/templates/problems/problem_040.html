@@ -1,0 +1,56 @@
+<!--
+In this file, print the names of the people that have pets and,
+as a sublist, the names of their pets.
+
+Follow the pseudocode.
+
+Notice that the structure of the lists is
+
+<ul>
+  <li>
+    Person name
+    <ul>
+      <li>Pet 1 name</li>
+      <li>Pet 2 name</li>
+      ... more pets ...
+    </ul>
+  </li>
+  ... more people ...
+</ul>
+-->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Problem 40</title>
+</head>
+<body>
+  <main>
+    <h1>Pet owners</h1>
+    <ul>
+      <!-- for each person in people -->
+
+        <!-- if the person.pets list is not empty -->
+
+          <li>
+            <!-- output the person's name -->
+
+            <ul>
+              <!-- for each pet name in person.pets -->
+
+                <li>{{ pet_name }}</li>
+              <!-- end nested for -->
+
+            </ul>
+          </li>
+        <!-- end if -->
+
+      <!-- end outer for -->
+    </ul>
+  </main>
+</body>
+</html>

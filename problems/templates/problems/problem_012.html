@@ -1,0 +1,28 @@
+<!--
+  The context now has a key named "user" in it.
+
+  The User instance has a property "is_authenticated"
+  on it.
+
+  If the user is authenticated, display their email
+  address in the indicated paragraph tag. Otherwise,
+  have it show the "Not logged in" message.
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Problem 012</title>
+  </head>
+  <body>
+    <main>
+      <!-- if the user is authenticated -->
+
+        <p class="email">{{ user.email|default_if_none:"no email" }}</p>
+      <!-- otherwise -->
+
+        <p class="message">Not logged in</p>
+      <!-- end if -->
+
+    </main>
+  </body>
+</html>

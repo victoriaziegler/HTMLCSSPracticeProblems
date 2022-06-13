@@ -13,3 +13,9 @@
   The grid needs to have four equally-sized columns with a gap
   of 18px between rows and columns.
 */
+
+.name-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}

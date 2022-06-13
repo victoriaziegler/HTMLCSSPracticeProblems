@@ -12,16 +12,22 @@
 -->
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Problem 012</title>
-    </head>
-    <body>
-        <main>
-            <!-- if the user is authenticated -->
-            <p class="email">{{ user.email|default_if_none:"no email" }}</p>
-            <!-- otherwise -->
-            <p class="message">Not logged in</p>
-            <!-- end if -->
-        </main>
-    </body>
+
+<head>
+    <title>Problem 012</title>
+</head>
+
+<body>
+    <main>
+        <!-- if the user is authenticated -->
+        {% if user.is_authenticated %}
+        <p class="email">{{ user.email|default_if_none:"no email" }}</p>
+        <!-- otherwise -->
+        {% else %}
+        <p class="message">Not logged in</p>
+        <!-- end if -->
+        {% endif %}
+    </main>
+</body>
+
 </html>

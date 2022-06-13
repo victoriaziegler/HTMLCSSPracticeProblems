@@ -2,12 +2,14 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Problem 026</title>
 </head>
+
 <body>
   <main>
     <!--
@@ -31,23 +33,25 @@
         </tr>
       </thead>
       <!-- The open table body tag -->
-
+      <tbody>
         <!-- for each person in people -->
-
-          <!-- Just the table row open tag -->
-
-            <!-- The table data tag with the person.name in it -->
-
-            <!-- The table data tag with the person.age in it -->
-
-            <!-- The table data tag with the person.pronouns in it -->
-
+        {% for person in people %}
+        <!-- Just the table row open tag -->
+        <tr>
+          <!-- The table data tag with the person.name in it -->
+          <td>{{ person.name }}</td>
+          <!-- The table data tag with the person.age in it -->
+          <td>{{ person.age }}</td>
+          <!-- The table data tag with the person.pronouns in it -->
+          <td>{{ person.pronouns }}</td>
           <!-- Just the table row close tag -->
-
+        </tr>
         <!-- end for -->
-
-      <!-- The close table body tag -->
+        {% endfor %}
+        <!-- The close table body tag -->
+      </tbody>
     </table>
   </main>
 </body>
+
 </html>

@@ -7,21 +7,24 @@
 -->
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Problem 007</title>
-  </head>
-  <body>
-    <main>
-      <!-- Add the open ul tag, here -->
 
-        <!-- for each name in names -->
+<head>
+  <title>Problem 007</title>
+</head>
 
-          <!-- li tag with {{name}} as content -->
-
-        <!-- End for -->
-
+<body>
+  <main>
+    <!-- Add the open ul tag, here -->
+    <ul>
+      <!-- for each name in names -->
+      {% for name in names %}
+      <!-- li tag with {{name}} as content -->
+      <li>{{name}}</li>
+      <!-- End for -->
+      {% endfor %}
       <!-- Add the close ul tag, here -->
+    </ul>
+  </main>
+</body>
 
-    </main>
-  </body>
 </html>

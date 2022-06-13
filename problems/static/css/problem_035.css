@@ -16,7 +16,11 @@
 
 /* Your definition for the "name-grid" CSS rule, here. */
 
-
+.name-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
 
 /*
   Now, create a CSS rule for the name-grid-entry class.
@@ -25,10 +29,17 @@
     padding: 12px;
 */
 
-
+.name-grid-entry {
+  box-shadow: 0 2px 4px 0 rgb(0, 0, 0, 0.2);
+  padding: 12px;
+}
 
 /*
   Finally, create a CSS rule for the name-grid-name
   class. Give it the following property.
     font-weight: bold;
 */
+
+.name-grid-name {
+  font-weight: bold;
+}

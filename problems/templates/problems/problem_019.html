@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,18 +11,20 @@
   <link rel="stylesheet" href="{% static 'css/problem_019.css' %}">
 
 </head>
+
 <body>
   <main>
     <ul>
       {% for name in names %}
-        <!--
+      <!--
           Use cycle where indicated in the following
           {% cycle "class-1" "class-2" %}
         -->
-        <li class="use cycle here">{{ name }}</li>
+      <li class="{% cycle 'grey' '' %}">{{ name }}</li>
 
       {% endfor %}
     </ul>
   </main>
 </body>
+
 </html>

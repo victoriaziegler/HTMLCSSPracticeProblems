@@ -2,12 +2,14 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Problem 030</title>
 </head>
+
 <body>
   <main>
     <!--
@@ -21,6 +23,25 @@
       This context has a list of Person objects stored
       in the "people" key.
     -->
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Pronouns</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for person in people %}
+        <tr>
+          <td>{{ person.name }}</td>
+          <td>{{ person.age }}</td>
+          <td>{{ person.pronouns }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
   </main>
 </body>
+
 </html>

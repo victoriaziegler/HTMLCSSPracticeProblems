@@ -16,7 +16,11 @@
 
 /* Your definition for the "name-grid" CSS rule, here. */
 
-
+.name-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
 
 /*
   Now, create a CSS rule for the name-grid-entry class.

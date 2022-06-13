@@ -2,12 +2,14 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Problem 029</title>
 </head>
+
 <body>
   <main>
     <!--
@@ -23,24 +25,34 @@
     -->
     <table>
       <!-- A table head open tag-->
-
+      <thead>
         <!-- A table row open tag -->
-
+        <tr>
           <!-- A table header tag with the content "Name" -->
-
+          <th>Name</th>
           <!-- A table header tag with the content "Age" -->
-
+          <th>Age</th>
           <!-- A table header tag with the content "Pronouns" -->
-
+          <th>Pronouns</th>
           <!-- A table row close tag -->
-
-      <!-- A table head close tag -->
+        </tr>
+        <!-- A table head close tag -->
+      </thead>
       <!--
         The whole tbody, for loop, tr, and td tags to show
         each person's name, age, and pronouns.
       -->
-
+      <tbody>
+        {% for person in people %}
+        <tr>
+          <td>{{ person.name }}</td>
+          <td>{{ person.age }}</td>
+          <td>{{ person.pronouns }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
     </table>
   </main>
 </body>
+
 </html>

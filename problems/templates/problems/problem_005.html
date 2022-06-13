@@ -8,18 +8,21 @@
 -->
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Problem 005</title>
-  </head>
-  <body>
-    <main>
-      <ul>
-        <!-- for each name in names -->
 
-          <li>{{ name }}</li>
-        <!-- End for -->
+<head>
+  <title>Problem 005</title>
+</head>
 
-      </ul>
-    </main>
-  </body>
+<body>
+  <main>
+    <ul>
+      <!-- for each name in names -->
+      {% for name in names %}
+      <li>{{ name }}</li>
+      <!-- End for -->
+      {% endfor %}
+    </ul>
+  </main>
+</body>
+
 </html>

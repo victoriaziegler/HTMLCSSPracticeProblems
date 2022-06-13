@@ -13,13 +13,19 @@
 
 /* .name-grid { */
 
-  /* Apply the display: grid; to the element */
+/* Apply the display: grid; to the element */
 
-  /* Apply four equal-sized columns to the grid */
-  /* grid-template-columns: repeat(4, 1fr); */
+/* Apply four equal-sized columns to the grid */
+/* grid-template-columns: repeat(4, 1fr); */
 
-  /* Apply a gap between all of the children */
-  /* gap: 18px; */
+/* Apply a gap between all of the children */
+/* gap: 18px; */
 
 /* Close the CSS rule. */
 /* } */
+
+.name-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}

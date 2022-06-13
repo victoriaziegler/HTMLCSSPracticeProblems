@@ -8,16 +8,19 @@
 -->
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Problem 004</title>
-  </head>
-  <body>
-    <main>
-      <!-- If show_information is True -->
 
-        <p><code>show_information</code> is true</p>
-      <!-- End if -->
+<head>
+  <title>Problem 004</title>
+</head>
 
-    </main>
-  </body>
+<body>
+  <main>
+    <!-- If show_information is True -->
+    {% if show_information is True %}
+    <p><code>show_information</code> is true</p>
+    <!-- End if -->
+    {% endif %}
+  </main>
+</body>
+
 </html>

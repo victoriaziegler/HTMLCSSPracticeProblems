@@ -1,16 +1,18 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Problem 022</title>
-        <link rel="stylesheet" href="{% static 'css/problem_019.css' %}">
-    </head>
-    <body>
-        <main>
-            <!--
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 022</title>
+    <link rel="stylesheet" href="{% static 'css/problem_019.css' %}">
+</head>
+
+<body>
+    <main>
+        <!--
       Do it, again, but this time swap the list
       items that are grey.
 
@@ -20,6 +22,12 @@
       item where each EVEN item is grey and the
       ODD ones aren't.
 -->
-        </main>
-    </body>
+        <ul>
+            {% for name in names %}
+            <li class="{% cycle '' 'grey' %}">{{name}}</li>
+            {% endfor %}
+        </ul>
+    </main>
+</body>
+
 </html>

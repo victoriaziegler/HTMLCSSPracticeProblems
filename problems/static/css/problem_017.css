@@ -3,5 +3,8 @@
   selector "error" and make the text
   color red for that rule.
 */
+.error {
+  color: red;
+}
 
 /* This time, do it from memory. */

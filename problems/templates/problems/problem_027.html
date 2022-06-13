@@ -2,12 +2,14 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Problem 027</title>
 </head>
+
 <body>
   <main>
     <!--
@@ -32,8 +34,17 @@
         The whole tbody, for loop, tr, and td tags to show
         each person's name, age, and pronouns.
       -->
-
+      <tbody>
+        {% for person in people %}
+        <tr>
+          <td>{{ person.name }}</td>
+          <td>{{ person.age }}</td>
+          <td>{{ person.pronouns }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
     </table>
   </main>
 </body>
+
 </html>

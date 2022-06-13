@@ -7,26 +7,29 @@
 -->
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Problem 011</title>
-  </head>
-  <body>
-    <main>
-      <!--
+
+<head>
+  <title>Problem 011</title>
+</head>
+
+<body>
+  <main>
+    <!--
         Build the UNORDERED list of names with
         names that are longer than 3 characters.
       -->
-      <ul>
-        <!-- for each name in names -->
+    <ul>
+      <!-- for each name in names -->
+      {% for name in names %}
+      <!-- if "i" in name -->
+      {% if "i" in name %}
+      <li>{{ name }}</li>
+      <!-- end if -->
+      {% endif %}
+      <!-- end for -->
+      {% endfor %}
+    </ul>
+  </main>
+</body>
 
-          <!-- if "i" in name -->
-
-            <li>{{ name }}</li>
-          <!-- end if -->
-
-        <!-- end for -->
-
-      </ul>
-    </main>
-  </body>
 </html>

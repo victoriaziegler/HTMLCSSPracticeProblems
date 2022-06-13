@@ -8,13 +8,20 @@
 -->
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Problem 009</title>
-  </head>
-  <body>
-    <main>
-      <!-- Build the ORDERED list of names -->
 
-    </main>
-  </body>
+<head>
+  <title>Problem 009</title>
+</head>
+
+<body>
+  <main>
+    <!-- Build the ORDERED list of names -->
+    <ol>
+      {% for name in names %}
+      <li>{{name}}</li>
+      {% endfor %}
+    </ol>
+  </main>
+</body>
+
 </html>

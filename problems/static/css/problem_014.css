@@ -3,11 +3,14 @@
   selector "error" and make the text
   color red for that rule.
 */
+.error {
+  color: red;
+}
 
 /* Start CSS class rule: */
 /* .error { */
 
-  /* color: red; */
+/* color: red; */
 
 /* End CSS class rule: */
 /* } */

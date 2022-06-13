@@ -8,13 +8,20 @@
 -->
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Problem 008</title>
-  </head>
-  <body>
-    <main>
-      <!-- Build the unorderd list of names -->
 
-    </main>
-  </body>
+<head>
+  <title>Problem 008</title>
+</head>
+
+<body>
+  <main>
+    <!-- Build the unorderd list of names -->
+    <ul>
+      {% for name in names %}
+      <li>{{name}}</li>
+      {% endfor %}
+    </ul>
+  </main>
+</body>
+
 </html>

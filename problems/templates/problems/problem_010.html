@@ -8,26 +8,29 @@
 -->
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Problem 010</title>
-  </head>
-  <body>
-    <main>
-      <!--
+
+<head>
+  <title>Problem 010</title>
+</head>
+
+<body>
+  <main>
+    <!--
         Build the ORDERED list of names with
         names that are longer than 3 characters.
       -->
-      <ol>
-        <!-- for each name in names -->
+    <ol>
+      <!-- for each name in names -->
+      {% for name in names %}
+      <!-- if name|length > 3 -->
+      {% if name|length > 3 %}
+      <li>{{ name }}</li>
+      <!-- end if -->
+      {% endif %}
+      <!-- end for -->
+      {% endfor %}
+    </ol>
+  </main>
+</body>
 
-          <!-- if name|length > 3 -->
-
-            <li>{{ name }}</li>
-          <!-- end if -->
-
-        <!-- end for -->
-
-      </ol>
-    </main>
-  </body>
 </html>

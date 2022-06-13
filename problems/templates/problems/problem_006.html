@@ -10,19 +10,22 @@
 -->
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Problem 006</title>
-  </head>
-  <body>
-    <main>
-      <ul>
-        <!-- for each name in names -->
 
-          <!-- li tag with {{name}} as content -->
+<head>
+  <title>Problem 006</title>
+</head>
 
-        <!-- End for -->
+<body>
+  <main>
+    <ul>
+      <!-- for each name in names -->
+      {% for name in names %}
+      <!-- li tag with {{name}} as content -->
+      <li> {{name}} </li>
+      <!-- End for -->
+      {% endfor %}
+    </ul>
+  </main>
+</body>
 
-      </ul>
-    </main>
-  </body>
 </html>

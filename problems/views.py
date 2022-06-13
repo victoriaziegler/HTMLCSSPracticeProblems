@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 from prettyprinter import cpprint, install_extras
 
-install_extras()
+install_extras(exclude=['attrs', 'ipython', 'ipython_repr_pretty'])
 
 # problem lists
 show_information_problems = [4]

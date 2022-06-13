@@ -22,35 +22,39 @@ Notice that the structure of the lists is
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Problem 40</title>
 </head>
+
 <body>
   <main>
     <h1>Pet owners</h1>
     <ul>
       <!-- for each person in people -->
-
-        <!-- if the person.pets list is not empty -->
-
-          <li>
-            <!-- output the person's name -->
-
-            <ul>
-              <!-- for each pet name in person.pets -->
-
-                <li>{{ pet_name }}</li>
-              <!-- end nested for -->
-
-            </ul>
-          </li>
-        <!-- end if -->
-
+      {% for person in people %}
+      <!-- if the person.pets list is not empty -->
+      {% if person.pets.all|length != 0 %}
+      <li>
+        <!-- output the person's name -->
+        {{ person.name }}
+        <ul>
+          <!-- for each pet name in person.pets -->
+          {% for pet_name in person.pets.all %}
+          <li>{{ pet_name }}</li>
+          <!-- end nested for -->
+          {% endfor %}
+        </ul>
+      </li>
+      <!-- end if -->
+      {% endif %}
       <!-- end outer for -->
+      {% endfor%}
     </ul>
   </main>
 </body>
+
 </html>

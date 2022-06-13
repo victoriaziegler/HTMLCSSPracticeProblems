@@ -25,15 +25,31 @@ to look at.
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Problem 41</title>
 </head>
+
 <body>
   <main>
     <h1>Pet owners</h1>
+    <ul>
+      {% for person in people %}
+      {% if person.pets.all|length != 0 %}
+      <li>{{ person.name }}
+        <ul>
+          {% for pet_name in person.pets.all %}
+          <li>{{ pet_name }}</li>
+          {% endfor %}
+      </li>
+    </ul>
+    {% endif %}
+    {% endfor %}
+    </ul>
   </main>
 </body>
+
 </html>

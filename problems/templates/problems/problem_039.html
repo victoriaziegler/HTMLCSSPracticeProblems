@@ -6,6 +6,7 @@ of the div with the "name-grid" class.
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,19 +14,22 @@ of the div with the "name-grid" class.
   <link rel="stylesheet" href="{% static 'css/problem_039.css' %}">
   <title>Problem 39</title>
 </head>
+
 <body>
   <main>
     <div class="name-grid">
       {% for person in people %}
 
-        <!-- Only show the card entries for people 21 and over -->
-          <div class="name-grid-entry">
-            <div class="name-grid-name">{{ person.name }}</div>
-            <div class="name-grid-pronouns">{{ person.pronouns }}</div>
-          </div>
-
+      <!-- Only show the card entries for people 21 and over -->
+      {% if person.age >= 21 %}
+      <div class="name-grid-entry">
+        <div class="name-grid-name">{{ person.name }}</div>
+        <div class="name-grid-pronouns">{{ person.pronouns }}</div>
+      </div>
+      {% endif %}
       {% endfor %}
     </div>
   </main>
 </body>
+
 </html>

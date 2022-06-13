@@ -1,0 +1,62 @@
+<!--
+In this file, print the names of the people that have pets and,
+as a sublist, the names of their pets.
+
+Follow the pseudocode.
+
+Notice that the structure of the lists is
+
+<ul>
+  <li>
+    Person name
+    <ul>
+      <li>Pet 1 name</li>
+      <li>Pet 2 name</li>
+      ... more pets ...
+    </ul>
+  </li>
+  ... more people ...
+</ul>
+-->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Problem 40</title>
+    </head>
+    <body>
+        <main>
+            <h1>Pet owners</h1>
+            <ul>
+                <!-- for each person in people -->
+                {% for person in people %}
+                    <!-- solution -->
+                    <!-- if the person.pets list is not empty -->
+                    {% if person.pets.all|length > 0 %}
+                        <!-- solution -->
+                        <li>
+                            <!-- output the person's name -->
+                            {{ person.name }}                               <!-- solution -->
+                            <ul>
+                                <!-- for each pet name in person.pets -->
+                                {% for pet_name in person.pets.all %}
+                                    <!-- solution -->
+                                    <li>{{ pet_name }}</li>
+                                    <!-- end nested for -->
+                                {% endfor %}
+                                <!-- solution -->
+                            </ul>
+                        </li>
+                        <!-- end if -->
+                    {% endif %}
+                    <!-- solution -->
+                    <!-- end outer for -->
+                {% endfor %}
+                <!-- solution -->
+            </ul>
+        </main>
+    </body>
+</html>

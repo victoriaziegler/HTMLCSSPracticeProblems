@@ -1,0 +1,31 @@
+<!--
+  The context has a key named "names" in it
+  that is a list of names.
+
+  Complete the pseudocode below to create an
+  an unordered list of names.
+
+  This time, you need to add the loop, and
+  the li tag with its contents in the loop.
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Problem 006</title>
+  </head>
+  <body>
+    <main>
+      <ul>
+        <!-- for each name in names -->
+        {% for name in names %}                   <!-- solution -->
+
+          <!-- li tag with {{name}} as content -->
+          <li>{{ name }}</li>                     <!-- solution -->
+
+        <!-- End for -->
+
+        {% endfor %}                              <!-- solution -->
+      </ul>
+    </main>
+  </body>
+</html>

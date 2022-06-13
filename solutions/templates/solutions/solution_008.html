@@ -1,0 +1,25 @@
+<!--
+  The context has a key named "names" in it
+  that is a list of names.
+
+  Complete the template from memory to build
+  an unordered list of list items, one for
+  each name in names in the context.
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Problem 008</title>
+  </head>
+  <body>
+    <main>
+      <!-- Build the unorderd list of names -->
+
+      <ul>                                        <!-- solution -->
+        {% for name in names %}                   <!-- solution -->
+          <li>{{ name }}</li>                     <!-- solution -->
+        {% endfor %}                              <!-- solution -->
+      </ul>                                       <!-- solution -->
+    </main>
+  </body>
+</html>

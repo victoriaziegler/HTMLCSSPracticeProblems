@@ -1,0 +1,66 @@
+/*
+  Follow the pseudocode to apply the grid layout to the
+  name grid.
+
+  After each property you type, save it and refresh the
+  browser to see what each line does.
+*/
+/*
+  Declare a CSS rule for the "name-grid" class.
+  Make sure to do the last part with the close curly brace, too,
+  so you can save your CSS file after each property.
+
+  The grid needs to have four equally-sized columns with a gap
+  of 18px between rows and columns.
+*/
+
+/* Your definition for the "name-grid" CSS rule, here. */
+.name-grid {                                        /* solution */
+  display: grid;                                    /* solution */
+  grid-template-columns: repeat(4, 1fr);            /* solution */
+  gap: 18px;                                        /* solution */
+}                                                   /* solution */
+
+
+
+/*
+  Now, create a CSS rule for the name-grid-entry class.
+  Give it the box shadow and the padding.
+  ALSO give it a background color of white.
+*/
+.name-grid-entry {                                  /* solution */
+  background-color: white;                        /* solution */
+  box-shadow: 0 2px 4px 0 rgb(0, 0, 0, 0.2);      /* solution */
+  padding: 12px;                                    /* solution */
+}                                                   /* solution */
+
+
+
+/*
+  Create a CSS rule for the name-grid-name class.
+*/
+.name-grid-name {                                   /* solution */
+  font-weight: bold;                                /* solution */
+}                                                   /* solution */
+
+
+/*
+  Set the background color of the html tag to rgb(248, 248, 248)
+  by using a tag selector rule like
+
+    html {
+      ...properties...
+    }
+*/
+html {                                              /* solution */
+  background-color: rgb(248, 248, 248);           /* solution */
+}                                                   /* solution */
+
+
+/*
+  Set the background color of the body tag to rgb(248, 248, 248)
+  by using a tag selector rule
+*/
+body {                                              /* solution */
+  background-color: rgb(248, 248, 248);           /* solution */
+}                                                   /* solution */

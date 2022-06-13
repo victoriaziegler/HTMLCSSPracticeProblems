@@ -1,0 +1,16 @@
+/*
+  Add a CSS rule for the CSS class
+  selector "error" and make the text
+  color red for that rule.
+*/
+
+/* Start CSS class rule: */
+/* .error { */
+.error {                                /* solution */
+
+  /* color: red; */
+  color: red;                         /* solution */
+
+/* End CSS class rule: */
+/* } */
+}                                       /* solution */

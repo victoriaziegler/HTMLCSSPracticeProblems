@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Problem 021</title>
+        <link rel="stylesheet" href="{% static 'css/solution_019.css' %}">
+    </head>
+    <body>
+        <main>
+            <!--
+      Build the whole unordered list from memory
+      by looping over each name in the "names"
+      key of the context and creating a list
+      item where each odd item is grey and the
+      others aren't.
+-->
+            <ul>
+                <!-- solution -->
+                {% for name in names %}
+                    <!-- solution -->
+                    <li class="{% cycle "grey" "" %}">{{ name }}</li>
+                    <!-- solution -->
+                {% endfor %}
+                <!-- solution -->
+            </ul>
+            <!-- solution -->
+        </main>
+    </body>
+</html>

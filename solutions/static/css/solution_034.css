@@ -1,0 +1,20 @@
+/*
+  Follow the pseudocode to apply the grid layout to the
+  name grid.
+
+  After each property you type, save it and refresh the
+  browser to see what each line does.
+*/
+/*
+  Declare a CSS rule for the "name-grid" class.
+  Make sure to do the last part with the close curly brace, too,
+  so you can save your CSS file after each property.
+
+  The grid needs to have four equally-sized columns with a gap
+  of 18px between rows and columns.
+*/
+.name-grid {                                        /* solution */
+  display: grid;                                    /* solution */
+  grid-template-columns: repeat(4, 1fr);            /* solution */
+  gap: 18px;                                        /* solution */
+}                                                   /* solution */

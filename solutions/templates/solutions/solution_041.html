@@ -1,0 +1,65 @@
+<!--
+In this file, print the names of the people that have pets and,
+as a sublist, the names of their pets.
+
+This time without the pseudocode, show a list of lists
+that contains the people that owns pets which you can
+determine by the length of the person.pets collection.
+
+Here's that structure of the lists, again, for you
+to look at.
+
+<ul>
+  <li>
+    Person name
+    <ul>
+      <li>Pet 1 name</li>
+      <li>Pet 2 name</li>
+      ... more pets ...
+    </ul>
+  </li>
+  ... more people ...
+</ul>
+-->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Problem 41</title>
+    </head>
+    <body>
+        <main>
+            <h1>Pet owners</h1>
+            <ul>
+                <!-- solution -->
+                {% for person in people %}
+                    <!-- solution -->
+                    {% if person.pets.all|length > 0 %}
+                        <!-- solution -->
+                        <li>
+                            <!-- solution -->
+                            {{ person.name }}                               <!-- solution -->
+                            <ul>
+                                <!-- solution -->
+                                {% for pet_name in person.pets.all %}
+                                    <!-- solution -->
+                                    <li>{{ pet_name }}</li>
+                                    <!-- solution -->
+                                {% endfor %}
+                                <!-- solution -->
+                            </ul>
+                            <!-- solution -->
+                        </li>
+                        <!-- solution -->
+                    {% endif %}
+                    <!-- solution -->
+                {% endfor %}
+                <!-- solution -->
+            </ul>
+            <!-- solution -->
+        </main>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!--
+  The context has a key named "names" in it
+  that is a list of names.
+
+  Complete the pseudocode below to create an
+  li (list item) tag using a Django for loop
+  for each name in names.
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Problem 005</title>
+  </head>
+  <body>
+    <main>
+      <ul>
+        <!-- for each name in names -->
+        {% for name in names %}                   <!-- solution -->
+
+          <li>{{ name }}</li>
+        <!-- End for -->
+
+        {% endfor %}                              <!-- solution -->
+      </ul>
+    </main>
+  </body>
+</html>

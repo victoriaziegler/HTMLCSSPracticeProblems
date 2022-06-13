@@ -40,10 +40,6 @@ def show_problem(request, problem_number):
             "Anima",
         ]
 
-    # Context for Problem 12
-    if problem_number in user_problems:
-        context["user"]: User.objects.first()
-
     # Context for Problems 23 through 41
     if problem_number in people_problems:
         context["people"] = Person.objects.all()
